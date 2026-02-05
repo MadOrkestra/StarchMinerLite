@@ -1,0 +1,37 @@
+# PlatformIO
+.pio/
+.vscode/
+lib/
+
+# IDE
+.vscode/
+*.swp
+*.swo
+*~
+
+# DATA
+data/config.json
+
+# Secrets - contains sensitive information
+src/secrets.h
+
+# Build artifacts
+build/
+*.bin
+*.elf
+*.hex
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
