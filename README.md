@@ -2,6 +2,8 @@
 
 A lightweight ESP32-C3 based miner for the [Starch blockchain](https://starch.one). This project runs on ESP32-C3 hardware and continuously mines blocks by fetching the latest blockchain hash and submitting new blocks to the Starch API.
 
+![ESP32-C3 Starch Miner Lite](preview.jpg)
+
 ## Features
 
 - **Blockchain Mining**: Automatically fetches the latest blockchain hash and submits new blocks
@@ -26,7 +28,7 @@ A lightweight ESP32-C3 based miner for the [Starch blockchain](https://starch.on
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/MadOrkestra/StarchMinerLite
 cd ESP32-C3-StarchMinerLite
 ```
 
@@ -42,7 +44,7 @@ Edit `src/secrets.h` with your actual values:
 
 ```cpp
 String CONFIG_MINER_ID = "YOUR_MINER_ID";      // Your Starch miner ID
-String CONFIG_MINER_COLOR = "blue";            // Miner color
+String CONFIG_MINER_COLOR = "#FF0000";         // Miner color (hex format, e.g., #FF0000 for red)
 String CONFIG_WIFI_SSID = "your_wifi_ssid";    // Your WiFi network name
 String CONFIG_WIFI_PASSWORD = "your_password"; // Your WiFi password
 ```
@@ -116,7 +118,7 @@ ESP32-C3-StarchMinerLite/
 All configuration is done in `src/secrets.h`:
 
 - **CONFIG_MINER_ID**: Your unique Starch miner identifier
-- **CONFIG_MINER_COLOR**: Color associated with your miner
+- **CONFIG_MINER_COLOR**: Color associated with your miner (hex format, e.g., `#FF0000` for red)
 - **CONFIG_WIFI_SSID**: WiFi network name
 - **CONFIG_WIFI_PASSWORD**: WiFi network password
 
@@ -174,11 +176,17 @@ Monitor serial output to debug issues or track mining activity.
 
 ## License
 
-[Add your license here]
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-## Contributing
+    http://www.apache.org/licenses/LICENSE-2.0
 
-[Add contribution guidelines here]
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 
 ## Support
 
