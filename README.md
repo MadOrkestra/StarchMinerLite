@@ -14,9 +14,19 @@ A lightweight ESP32-C3 based miner for the [Starch blockchain](https://starch.on
 
 ## Hardware Requirements
 
-- **ESP32-C3-DevKitM-1** development board
+- **ESP32-C3** development board (e.g. ESP32-C3-DevKitM-1 or ESP32-C3 Super Mini)
 - USB cable for programming and power
 - WiFi network access
+
+## Sourcing Hardware
+
+This project targets ESP32-C3 boards with built-in USB and WiFi. A compact, low-cost option that works well for this miner:
+
+- **[ESP32-C3 Super Mini (AliExpress)](https://s.click.aliexpress.com/e/_c3ES4dBJ)** — small ESP32-C3 module with USB-C, suitable for always-on mining
+- **[ESP32-C3 Super Mini (Amazon US)](https://amzn.to/49V8xgT)**
+- **[ESP32-C3 Super Mini (Amazon Germany)](https://amzn.to/4sv2isB)**
+
+You will also need a USB cable to flash firmware and power the device. No display or extra peripherals are required.
 
 ## Prerequisites
 
